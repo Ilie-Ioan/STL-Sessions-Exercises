@@ -39,34 +39,63 @@ The exercises are grouped into the following categories:
 
 **Break: 30 minutes**
 
-### Session 2: 2 hours of work
-**Set and Map**
+### **Exercise 7: Set Operations**
+- Create two sets (`std::set<int>`) and add some integers to each.
+  - Set 1: contains numbers `{1, 2, 3, 4, 5, 6}`
+  - Set 2: contains numbers `{4, 5, 6, 7, 8, 9}`
+- Using `std::set_intersection` and `std::set_union`, find the intersection and union of the two sets.
+- Display the results.
 
-7. **Exercise 7: Set Operations**
-   - Create two sets (`std::set<int>`) and add some integers to each.
-     - Set 1: contains numbers {1, 2, 3, 4, 5, 6}
-     - Set 2: contains numbers {4, 5, 6, 7, 8, 9}
-   - Using `std::set_intersection` and `std::set_union`, find the intersection and union of the two sets.
-   - Display the results.
+---
 
-8. **Exercise 8: Duplicate Check in Set**
-   - Create a `std::set<int>`.
-   - Add elements from a list that contains duplicate values (e.g., {1, 2, 3, 2, 1, 4, 5}).
-   - Display the set and note that duplicates are automatically eliminated.
+### **Exercise 8: Finding Duplicates with std::multiset**
+- Create a `std::multiset<int>` and add integers, including duplicates (e.g., `{3, 1, 4, 4, 2, 3, 5, 6, 2, 7, 3}`).
+- Display all numbers in the multiset along with the frequency of each number (how many times each number appears).
+- Write a function that removes all duplicates from the multiset and stores the result in a `std::set<int>`.
+- Display the result, showing both the original multiset and the set of unique numbers.
 
-9. **Exercise 9: Using Map**
-   - Create a `std::map<std::string, float>`, where the key is a student's name and the value is their average.
-   - Insert at least 5 different (name, average) pairs.
-   - Display all pairs ordered alphabetically by name.
+---
 
-10. **Exercise 10: Search and Update in Map**
-    - Search for a specific student's name in the map (name entered by the user).
-    - If the student exists in the map, update their average with a new value.
-    - If the student does not exist, add a new pair to the map with the student's name and respective average.
-    - Display the map after updating.
+### **Exercise 9: Unique Numbers from a List**
+- Create a `std::list<int>` that contains integers (e.g., `{1, 2, 2, 3, 4, 4, 5}`).
+- Use a `std::set<int>` to extract unique numbers from the list.
+- Display the unique numbers.
 
-**Break: 30 minutes**
+---
 
+### **Exercise 10: Names and Frequency with std::unordered_multiset**
+- Create a `std::unordered_multiset<std::string>` to add names (e.g., `{"Ion", "Maria", "Andrei", "Maria", "Ion", "Andrei", "Ana", "Ion", "Cristina", "Maria"}`).
+- Display the added names, including the frequency of each name (how many times it was added).
+- Write a function to determine the top 3 most frequent names in the `unordered_multiset`.
+- Display these names and their count for each, along with the unique names.
+
+---
+
+### **Exercise 11: Using Map**
+- Create a `std::map<std::string, float>`, where the key is a student's name and the value is their average.
+- Insert at least 5 different (name, average) pairs.
+- Display all pairs ordered alphabetically by name.
+
+---
+
+### **Exercise 12: Search and Update in Map**
+- Search for a specific student's name in the map (name entered by the user).
+- If the student exists in the map, update their average with a new value.
+- If the student does not exist, add a new pair to the map with the student's name and respective average.
+- Display the map after updating.
+
+---
+
+### **Exercise 13: Number of Students by Average**
+- Create a `std::map<float, int>` that associates averages with the number of students who have that average.
+- Populate the map with at least 10 students and averages.
+- Display the average and the number of students for each average.
+
+---
+
+### **Exercise 14: Finding the Student with the Highest Average**
+- Extend the `std::map<std::string, float>` created earlier to find the student with the highest average.
+- Display the name of the student and their average.
 ### Session 3: 1 hour of work
 **Deque and STL Algorithms**
 
